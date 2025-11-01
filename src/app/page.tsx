@@ -75,7 +75,7 @@ export default function Home() {
   }, [isScanning]);
 
   return (
-    <main className="relative w-full h-dvh overflow-hidden px-4 pt-8 pb-4">
+    <main className="relative w-full h-dvh px-4 pt-8 pb-4 overflow-hidden">
       {activeTab === "scan" && (
         <ScanTab
           isScanning={isScanning}
