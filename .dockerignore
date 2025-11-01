@@ -1,0 +1,36 @@
+# Node modules and build output
+node_modules
+.next
+out
+dist
+
+# Logs
+npm-debug.log*
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile*
+.dockerignore
+
+# Tests and CI configs
+__tests__
+coverage
+jest.config.*
+vitest.config.*
+cypress
+playwright.config.*
+
+# Misc
+*.swp
+*.swo
+*.bak
+*.tmp
