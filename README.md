@@ -1,12 +1,12 @@
 # NutriScan
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://nutriscan.vercel.app)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://nutri-scan-phi.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
 Scan product barcodes with your phone camera and instantly get nutrition information with color-coded health indicators. No signup, all data stays on your device.
 
-**[Try it now →](https://nutriscan.vercel.app)**
+**[Try it now →](https://nutri-scan-phi.vercel.app)**
 
 ---
 
