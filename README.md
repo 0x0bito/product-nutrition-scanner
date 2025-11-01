@@ -4,7 +4,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
-Scan product barcodes with your phone camera and instantly get nutrition information with color-coded health indicators. No signup, no tracking, all data stays on your device.
+Scan product barcodes with your phone camera and instantly get nutrition information with color-coded health indicators. No signup, all data stays on your device.
 
 **[Try it now →](https://nutriscan.vercel.app)**
 
@@ -40,7 +40,6 @@ Scan product barcodes with your phone camera and instantly get nutrition informa
 - **[TypeScript](https://www.typescriptlang.org/)** - Type safety and better developer experience
 - **[Quagga2](https://github.com/ericblade/quagga2)** - Reliable JavaScript barcode scanner supporting EAN-13, UPC-A, and more
 - **[Open Food Facts API](https://world.openfoodfacts.org/)** - Open database with 3M+ food products worldwide
-- **localStorage** - Client-side storage for scan history
 
 ---
 
@@ -59,7 +58,7 @@ Based on UK Food Standards Agency guidelines (per 100g):
 
 ## Getting Started
 
-### Option 1: Quick Start (Recommended)
+### Option 1: Quick Start
 
 ```bash
 # Clone the repository
@@ -127,7 +126,7 @@ docker compose up --build
 
 - **Hold steady** - Keep the barcode in frame for 2-3 seconds
 - **Adjust distance** - Try moving closer or further from the barcode
-- **Check barcode format** - App supports EAN-13, UPC-A, UPC-E, and Code 128
+- **Supported formats** - EAN-13, UPC-A/E, Code 128, and Code 39
 
 ---
 
