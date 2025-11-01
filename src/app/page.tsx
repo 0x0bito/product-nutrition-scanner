@@ -30,10 +30,9 @@ export default function Home() {
             type: "LiveStream",
             target: scannerRef.current as string | Element | undefined,
             constraints: {
-              width: 1920,
-              height: 1080,
+              width: 640,
+              height: 480,
               facingMode: "environment",
-              aspectRatio: 16 / 9,
             },
           },
           decoder: {
