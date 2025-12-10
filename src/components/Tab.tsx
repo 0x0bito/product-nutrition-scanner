@@ -24,7 +24,7 @@ export default function Tab({ activeTab, setActiveTab }: propsType) {
           />
           <span className="text-xs font-medium mt-1">Scan</span>
           {activeTab === "scan" && (
-            <div className="absolute bottom-0 w-12 h-1 bg-blue-500 rounded-t-full" />
+            <div className="absolute bottom-0 w-12 h-1 bg-blue-500 rounded-full" />
           )}
         </button>
 
@@ -42,7 +42,7 @@ export default function Tab({ activeTab, setActiveTab }: propsType) {
           />
           <span className="text-xs font-medium mt-1">History</span>
           {activeTab === "history" && (
-            <div className="absolute bottom-0 w-12 h-1 bg-blue-500 rounded-t-full" />
+            <div className="absolute bottom-0 w-12 h-1 bg-blue-500 rounded-full" />
           )}
         </button>
       </div>
