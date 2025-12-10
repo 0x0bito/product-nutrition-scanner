@@ -1,12 +1,6 @@
 # NutriScan
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://nutri-scan-phi.vercel.app)
-[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
-
-Scan product barcodes with your phone camera and instantly get nutrition information with color-coded health indicators. No signup, all data stays on your device.
-
-**[Try it now →](https://nutri-scan-phi.vercel.app)**
+A web app that scans product barcodes and displays nutrition information with color-coded health indicators.
 
 ---
 
@@ -14,10 +8,9 @@ Scan product barcodes with your phone camera and instantly get nutrition informa
 
 <table>
   <tr>
-    <td><img src="./screenshots/scan.png" alt="Barcode scanning" width="250"/><br/><sub>Real-time scanning</sub></td>
-    <td><img src="./screenshots/result-1.png" alt="Nutrition info" width="250"/><br/><sub>Traffic light indicators</sub></td>
-    <td><img src="./screenshots/result-2.png" alt="Detailed breakdown" width="250"/><br/><sub>Full nutrient breakdown</sub></td>
-    <td><img src="./screenshots/history.png" alt="Scan history" width="250"/><br/><sub>Scan history</sub></td>
+    <td><img src="./screenshots/home.jpg" alt="home page" width="250"/></td>
+    <td><img src="./screenshots/result.jpg" alt="Nutritions info" width="250"/></td>
+    <td><img src="./screenshots/history.jpg" alt="history page" width="250"/></td>
   </tr>
 </table>
 
