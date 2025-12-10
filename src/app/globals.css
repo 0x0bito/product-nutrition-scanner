@@ -50,8 +50,8 @@ canvas {
 .arrow {
   width: 18px;
   height: 18px;
-  border-top: 2px solid gray;
-  border-right: 2px solid gray;
+  border-top: 3px solid gray;
+  border-right: 3px solid gray;
   transform: rotate(-45deg);
   opacity: 0;
   animation: swipeUp 1.5s ease-in-out infinite;
@@ -64,13 +64,13 @@ canvas {
 @keyframes swipeUp {
   0% {
     opacity: 0;
-    transform: translateY(40px) rotate(-45deg);
+    transform: translateY(35px) rotate(-45deg);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: translateY(-20px) rotate(-45deg);
+    transform: translateY(0px) rotate(-45deg);
   }
 }

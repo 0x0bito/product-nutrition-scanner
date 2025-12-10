@@ -38,9 +38,8 @@ export default function ScanTab({
       <h1 className="text-4xl font-semibold text-center">Nutrition Scanner</h1>
       <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col justify-center items-center gap-4">
         <div
-          className={`overflow-hidden w-[300px] h-[250px] bg-gray-100 border-gray-400 ${
-            !isScanning ? "border-2 border-dashed" : ""
-          } rounded-xl flex flex-col justify-center items-center`}
+          className={`overflow-hidden w-[300px] h-[250px] bg-gray-100 border-gray-400 ${!isScanning ? "border-2 border-dashed" : ""
+            } rounded flex flex-col justify-center items-center`}
         >
           {!isScanning && (
             <>
@@ -50,27 +49,25 @@ export default function ScanTab({
               </span>
             </>
           )}
-          {isScanning && (
-            <div ref={scannerRef} className="w-full h-full rounded-xl" />
-          )}
+          {isScanning && <div ref={scannerRef} className="w-full h-full" />}
         </div>
 
         {isScanning ? (
           <button
             type="button"
-            className="flex items-center justify-center bg-red-500 text-white py-4 px-8 rounded-full gap-2 font-semibold hover:bg-red-600 transition-colors ease-out cursor-pointer"
+            className="flex items-center justify-center bg-red-500 text-white py-4 px-8 gap-2 font-semibold hover:bg-red-600 transition-colors ease-out cursor-pointer"
             onClick={handleStopScan}
           >
-            <Camera className="text-white size-6 stroke-2" />
+            {/* <Camera className="text-white size-6 stroke-2" /> */}
             STOP SCAN
           </button>
         ) : (
           <button
             type="button"
-            className="flex items-center justify-center bg-blue-500 text-white py-4 px-8 rounded-full gap-2 font-semibold hover:bg-blue-600 transition-colors ease-out cursor-pointer"
+            className="flex items-center justify-center bg-blue-500 text-white py-4 px-8 rounded gap-2 font-semibold hover:bg-blue-600 transition-colors ease-out cursor-pointer"
             onClick={handleStartScan}
           >
-            <Camera className="text-white size-6 stroke-2" />
+            {/* <Camera className="text-white size-6 stroke-2" /> */}
             SCAN PRODUCT
           </button>
         )}
