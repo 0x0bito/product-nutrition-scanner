@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NutriScan",
-  description: "Scan product barcodes with your phone camera and instantly get nutrition information",
+  description:
+    "Scan product barcodes with your phone camera and instantly get nutrition information",
 };
 
 export const viewport: Viewport = {

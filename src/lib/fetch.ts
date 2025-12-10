@@ -1,22 +1,27 @@
 import { toast } from "sonner";
 import type { EssentialData } from "@/types/openfoodfacts";
 import { saveToHistory } from "./storage";
+import isEssentialDataEmpty from "./isEssentialDataEmpty";
+import type { RefObject } from "react";
 
 export async function fetchProduct(
   barcode: string,
   setProductData: React.Dispatch<React.SetStateAction<EssentialData | null>>,
   setResultOverlay: React.Dispatch<React.SetStateAction<boolean>>,
+  lastScannedRef: RefObject<string | null>,
 ) {
   const id = toast.loading("Fetching product nutrition values");
   try {
     const response = await fetch(
       `https://world.openfoodfacts.org/api/v2/product/${barcode}.json`,
     );
+    // await new Promise((res) => setTimeout(() => res(1), 5000));
     toast.dismiss(id);
+    lastScannedRef.current = null;
 
     if (!response.ok) {
       toast.error("Failed to fetch product");
-      throw new Error("Failed to fetch product data");
+      return;
     }
 
     const data = await response.json();
@@ -49,6 +54,11 @@ export async function fetchProduct(
         salt: nutriments.salt || 0,
       },
     };
+
+    if (isEssentialDataEmpty(essentialData)) {
+      toast.warning("Product data not found");
+      return;
+    }
 
     const newHistory = {
       ...essentialData,

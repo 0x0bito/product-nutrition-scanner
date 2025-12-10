@@ -15,6 +15,7 @@ export default function Home() {
   const scannerRef = useRef<HTMLDivElement>(null);
   const [isScanning, setIsScanning] = useState(false);
   const [productData, setProductData] = useState<EssentialData | null>(null);
+  const lastScannedRef = useRef<string | null>(null);
 
   useEffect(() => {
     if (!isScanning) {
@@ -60,9 +61,20 @@ export default function Home() {
       );
       Quagga.onDetected((result) => {
         const code = result.codeResult.code;
-        setIsScanning(false);
+
+        if (lastScannedRef.current === code) {
+          return;
+        }
+        lastScannedRef.current = code;
+
         Quagga.stop();
-        fetchProduct(code as string, setProductData, setResultOverlay);
+        setIsScanning(false);
+        fetchProduct(
+          code as string,
+          setProductData,
+          setResultOverlay,
+          lastScannedRef,
+        );
       });
     });
 

@@ -102,9 +102,8 @@ export default function ResultOverlay({
   return (
     <div
       ref={resultOverlayRef}
-      className={`z-50 shadow-2xl shadow-black absolute left-0 bg-gray-100 w-full min-h-[150px] rounded-t-4xl flex flex-col justify-center items-center ${
-        isSwipedUp ? "space-y-4" : ""
-      }`}
+      className={`z-50 shadow-2xl shadow-black absolute left-0 bg-gray-100 w-full min-h-[150px] rounded-t-4xl flex flex-col justify-center items-center ${isSwipedUp ? "space-y-4" : ""
+        }`}
       style={{
         bottom: resultOverlay ? 0 : -300,
         opacity: resultOverlay ? 1 : 0,
@@ -122,9 +121,8 @@ export default function ResultOverlay({
       )}
       <div className="mt-6 space-y-1">
         <p
-          className={`text-center font-semibold ${
-            isSwipedUp ? "text-xl" : "text-2xl"
-          }`}
+          className={`text-center font-semibold ${isSwipedUp ? "text-xl" : "text-2xl"
+            }`}
         >
           {productData?.name}
         </p>
@@ -149,11 +147,10 @@ export default function ResultOverlay({
               {["A", "B", "C", "D", "E"].map((score) => (
                 <div
                   key={score}
-                  className={`w-[40px] h-[40px] ${
-                    score === productData?.nutriScore
-                      ? getNutritionScoreColor(productData.nutriScore)
-                      : "bg-gray-300"
-                  } text-white rounded-lg flex items-center justify-center text-lg font-semibold p-6`}
+                  className={`w-[40px] h-[40px] ${score === productData?.nutriScore
+                    ? getNutritionScoreColor(productData.nutriScore)
+                    : "bg-gray-300"
+                    } text-white rounded-lg flex items-center justify-center text-lg font-semibold p-6`}
                 >
                   {score}
                 </div>
@@ -185,18 +182,17 @@ export default function ResultOverlay({
                 >
                   <p className="flex items-center justify-center gap-2 font-semibold capitalize">
                     <span
-                      className={`block w-[10px] h-[10px] rounded-full ${
-                        productData?.nutrition &&
+                      className={`block w-[10px] h-[10px] rounded-full ${productData?.nutrition &&
                         getNutritionColor(
                           nutrition,
                           productData?.nutrition[nutrition],
                         )
-                      } `}
+                        } `}
                     ></span>
                     {nutrition}
                   </p>
                   <p>
-                    {productData?.nutrition[nutrition].toFixed(2)}
+                    {productData?.nutrition[nutrition].toFixed(3)}
                     {getMetric(nutrition)}
                   </p>
                 </div>
