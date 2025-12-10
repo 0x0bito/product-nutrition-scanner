@@ -21,11 +21,8 @@ export function saveToHistory(productData: EssentialData) {
   } catch (error) {
     const isQuotaExceeded =
       error instanceof DOMException &&
-      (error.name === "QuotaExceededError" || // Chrome, Edge, etc.
-        error.name === "NS_ERROR_DOM_QUOTA_REACHED" || // Firefox
-        error.code === 22 || // Legacy Chrome
-        error.code === 1014); // Legacy Firefox
-
+      (error.name === "QuotaExceededError" ||
+        error.name === "NS_ERROR_DOM_QUOTA_REACHED");
     if (!isQuotaExceeded) {
       return;
     }
