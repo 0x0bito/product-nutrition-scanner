@@ -34,3 +34,5 @@ playwright.config.*
 *.swo
 *.bak
 *.tmp
+
+screenshots
