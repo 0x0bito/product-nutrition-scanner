@@ -14,11 +14,10 @@ export default function Tab({ activeTab, setActiveTab }: propsType) {
         <button
           type="button"
           onClick={() => setActiveTab("scan")}
-          className={`flex flex-col items-center justify-center flex-1 h-full transition-colors ${
-            activeTab === "scan"
-              ? "text-blue-500"
-              : "text-gray-400 hover:text-gray-600"
-          }`}
+          className={`flex flex-col items-center justify-center flex-1 h-full transition-colors ${activeTab === "scan"
+            ? "text-blue-500"
+            : "text-gray-400 hover:text-gray-600"
+            }`}
         >
           <ScanLine
             className={`w-6 h-6 ${activeTab === "scan" ? "stroke-2" : ""}`}
@@ -33,11 +32,10 @@ export default function Tab({ activeTab, setActiveTab }: propsType) {
         <button
           type="button"
           onClick={() => setActiveTab("history")}
-          className={`flex flex-col items-center justify-center flex-1 h-full transition-colors ${
-            activeTab === "history"
-              ? "text-blue-500"
-              : "text-gray-400 hover:text-gray-600"
-          }`}
+          className={`flex flex-col items-center justify-center flex-1 h-full transition-colors ${activeTab === "history"
+            ? "text-blue-500"
+            : "text-gray-400 hover:text-gray-600"
+            }`}
         >
           <History
             className={`w-6 h-6 ${activeTab === "history" ? "stroke-2" : ""}`}
