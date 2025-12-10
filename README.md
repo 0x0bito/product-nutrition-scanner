@@ -30,7 +30,7 @@ Based on UK Food Standards guidelines (per 100g):
 ### Requirements
 
 - **Docker & Docker Compose**
-- 
+
 ```bash
 # Clone repository
 git clone https://github.com/0x0bito/nutriscan.git
@@ -46,25 +46,15 @@ docker compose up --build
 
 - **Check browser permissions** - Make sure camera access is allowed
 - **Use HTTPS or localhost** - Browsers block camera on insecure connections follow this [article](https://medium.com/@Carmichaelize/enabling-the-microphone-camera-in-chrome-for-local-unsecure-origins-9c90c3149339) on how to enable Microphone/Camera in Chrome for Unsecure Origins
-- **Try another browser** - Chrome and Edge have best compatibility
 
 ### Product Not Found
 
-- **Add it yourself** - Open Food Facts is community-driven, you can contribute missing products
+- **Add it yourself** - **[Open Food Facts](https://world.openfoodfacts.org/)** is community-driven, you can contribute missing products
 
 ### Scanning Issues
 
 - **Adjust distance** - Try moving closer or further from the barcode
-- **Supported formats** - EAN-13, UPC-A/E, Code 128, and Code 39
-
-## Reporting Bugs
-
-Open an issue with:
-
-- Clear description of the problem
-- Steps to reproduce
-- Expected vs actual behavior
-- Browser info
+- **Supported formats** - EAN, UPC, Code 128, Code 39
 
 ## Acknowledgments
 
