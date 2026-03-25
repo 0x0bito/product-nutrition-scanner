@@ -33,7 +33,7 @@ Based on UK Food Standards guidelines (per 100g):
 
 ```bash
 # Clone repository
-git clone https://github.com/0x0bito/nutriscan.git
+git clone https://github.com/yahrour/nutriscan.git
 cd nutriscan
 
 # Start with Docker
